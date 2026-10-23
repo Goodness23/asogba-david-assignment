@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+</head>
+<body>
+    <header>
+        <h1>Student Information Registration</h1>
+    </header>
+
+    <main>
+        <section>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Student Details</legend>
+
+                    <!-- Student Name -->
+                    <div>
+                        <label for="student-name">Student Name:</label>
+                        <input type="text" id="student-name" name="student_name" required>
+                    </div>
+
+                    <!-- Matric Number -->
+                    <div>
+                        <label for="matric">Matric Number:</label>
+                        <input type="text" id="matric" name="matric" required>
+                    </div>
+
+                    <!-- Department -->
+                    <div>
+                        <label for="department">Department:</label>
+                        <input type="text" id="department" name="department" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <!-- Gender -->
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <div>
+                            <input type="radio" id="gender-male" name="gender" value="Male" required>
+                            <label for="gender-male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="gender-female" name="gender" value="Female">
+                            <label for="gender-female">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="gender-other" name="gender" value="Other">
+                            <label for="gender-other">Other</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Programme (Fulltime, Weekday, Weekend) -->
+                    <fieldset>
+                        <legend>Programme</legend>
+                        <div>
+                            <input type="radio" id="prog-fulltime" name="programme" value="Fulltime" required>
+                            <label for="prog-fulltime">Fulltime</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="prog-weekday" name="programme" value="Weekday">
+                            <label for="weekday">Weekday</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="prog-weekend" name="programme" value="Weekend">
+                            <label for="weekend">Weekend</label>
+                        </div>
+                    </fieldset>
+
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
